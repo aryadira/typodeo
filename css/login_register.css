@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu&family=Bebas+Neue&family=Fira+Code:wght@300&family=Inter&family=Oswald:wght@500&family=Playfair+Display&family=Raleway:wght@200;400&family=Roboto&display=swap');
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+/* VARIABEL */
+:root 
+{
+  --primary-white     : #ffffff;
+  --secondary-white   : #eeeeee;
+  --transparent-black : rgba(23, 0, 56, 40%);
+  --primary-black     : #000000;
+  --second-black      : #111111;
+  --secondary-black   : rgb(9, 0, 22);
+  --third-black       : #18003a;
+  --fourth-black      : #25005a;
+  --primary-purple    : #5f00e5;
+  --dark-purple       : rgb(43, 0, 103);
+  --secondary-purple  : rgb(231, 200, 255);
+  --primary-green     : rgb(0, 216, 94);
+  --secondary-green   : rgb(206, 255, 227);
+}
+
+.text-center h1{
+  font-weight: bold;
+}
+
+/* LOGIN & REGISTER CSS */
+.login_menu,
+.register_menu {
+  background-color: var(--primary-white);
+  backdrop-filter: blur(20px);
+  border-radius: 7px;
+  margin: auto;
+}
+
+.user .form-group input {
+  padding: 25px 15px;
+}
+
+.user .form-group input:focus {
+  background-color: rgb(246, 235, 255);
+}
+
+.user .form-group input::placeholder {
+  color: var(--primary-purple);
+  font-size: 15px;
+}
+
+/* .image_register,
+.image_login {
+  background-image: url(../image/Typhydeo.gif);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #090016fa;
+} */
+
+.btn_login, .btn_register {
+  background-color: #5f00e5;
+  color:#fff;
+  border:none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.btn_login, .btn_register:hover {
+  background-color: #5500cb;
+  color:#fff;
+  border:none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+.layer {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--third-black);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: layer 2s forwards;
+}
+
+.layer img {
+  width: 300px;
+}
+
+@keyframes layer {
+  0% {
+    transform: translateY(-100vh);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-100vh);
+    display: none;
+  }
+}

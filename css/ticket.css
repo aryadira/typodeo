@@ -1,0 +1,71 @@
+/* TICKET */
+.tic_grp {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tic_img {
+  width: 30%;
+}
+
+.tic_img img {
+  width: 320px;
+  height: 558px;
+}
+
+.tic_img button {
+  width: 79%;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  background-color: var(--primary-purple);
+  color: var(--primary-white);
+  cursor: pointer;
+}
+.tic_time {
+  width: 300px;
+  background-color: red;
+}
+.tic_kurs_grp {
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tic_bar_grp {
+  width: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.tic_bar_grp .tic_bar {
+  width: 50px;
+  height: 50px;
+  background-color: var(--primary-white);
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.tic_bar_grp .tic_bar:hover {
+  background-color: var(--primary-purple);
+  color: var(--primary-white);
+}
+
+.tic_bar input {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.tic_bar:focus {
+  background-color: var(--primary-purple);
+}
+
+
